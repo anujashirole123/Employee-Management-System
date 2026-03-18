@@ -1,0 +1,104 @@
+/* Dashboard.css */
+
+.dashboard-container {
+  padding: 40px;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(120deg, #e0f7fa, #e1bee7);
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #111827;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.dashboard-card {
+  width: 200px;
+  padding: 30px;
+  border-radius: 12px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.dashboard-card:hover {
+  transform: scale(1.08);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+/* Tables fadeIn animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+table {
+  margin: auto;
+  border-collapse: collapse;
+  width: 80%;
+  animation: fadeIn 0.5s;
+}
+
+th {
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f3f4f6;
+}
+
+td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.search-container {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.search-container input {
+  padding: 10px 15px;
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.search-container button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.quick-actions {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.quick-actions button {
+  padding: 15px 30px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.quick-actions button:hover {
+  opacity: 0.9;
+}

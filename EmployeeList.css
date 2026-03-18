@@ -1,0 +1,95 @@
+/* EmployeeList.css */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f7fc;
+  margin: 0;
+  padding: 0;
+}
+
+.list-container {
+  padding: 40px 50px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.list-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #1f2937;
+}
+
+.add-btn {
+  background: #3b82f6;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.3s;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.add-btn:hover {
+  transform: scale(1.05);
+  background: #2563eb;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.employee-table th,
+.employee-table td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.employee-table th {
+  background: #3b82f6;
+  color: white;
+  font-weight: 600;
+}
+
+.employee-table tr:nth-child(even) {
+  background: #f9fafb;
+}
+
+.employee-table tr:hover {
+  background: #e0f2fe;
+}
+
+.button {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  margin-right: 5px;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.button:hover {
+  transform: scale(1.05);
+}
+
+.edit-btn {
+  background: #10b981;
+  color: white;
+}
+
+.delete-btn {
+  background: #ef4444;
+  color: white;
+}
